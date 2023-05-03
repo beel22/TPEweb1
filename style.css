@@ -1,6 +1,9 @@
 .botones{
-    display: flex;
+    display: inline-flex;
     list-style: none;
+    background-color: black;
+    opacity: 50%;
+    align-content:end ;
 }
 .footer{
     display: flex;
@@ -11,6 +14,14 @@ li{
     padding: 10px;
 }
 
-.container{
-    
+.box .box-container{
+    display: flex;
+    flex: 1 1 25rem;
+    margin: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    background-image: url("images/frutos_secos.png");
 }
