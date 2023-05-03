@@ -86,3 +86,13 @@ body {
 .social-link a:hover {
     background-color: #00c3ff;
 }
+
+@media(max-width:991px){
+    .footer-row {
+        text-align: center;
+    }
+    .foter-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }  
+}
