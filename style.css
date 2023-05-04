@@ -210,3 +210,17 @@ body {
         margin-bottom: 30px;
     }
 }
+.footer .rights {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.4rem 0;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    font-size: 15px;
+    padding-bottom: 5rem;
+  }
+  
+  .footer .rights span {
+    color: var(--blue);
+  }
