@@ -76,7 +76,7 @@ nav > ul > li > a{
 }
 nav > ul > li > a:hover{
     transform: scala(1.1);
-    background: teal;
+    background: #00c3ff;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 
@@ -126,12 +126,27 @@ nav > ul > li > ul > li a{
 }
 /*color y dimension a los botones a con hover*/
 nav > ul > li >ul >li >a:hover{
-    background: teal;
+    background: #00c3ff;
     color: white;
     transform: scale(1.1);
     padding-left: 30px;
     font-size: 14px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.promociones {
+    background-image: url(images/frutos_secos.png);
+    width: 100%;
+    height: 250px;
+    padding: 15px;
+}
+.promociones h1{
+    color: #fff59d;
+}
+.promociones h2{
+    color: #fff59d;
+    display: flex;
+    flex-direction:row-reverse;
 }
 
 body {
