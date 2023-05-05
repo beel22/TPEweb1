@@ -133,7 +133,7 @@ nav > ul > li >ul >li >a:hover{
     font-size: 14px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
-
+/*bajo el nav*/
 .promociones {
     background-image: url(images/frutos_secos.png);
     width: 100%;
