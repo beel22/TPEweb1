@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Contacto </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon"/>
 </head>
 <body>
     <!--aca arranca el header-->
     <header>
         <div class="header-superior">
             <div class="logo">
-                <img src="#" alt="imagen del logo">
+                <img src="images/logo.png" alt="imagen del logo">
             </div>
             <div class="search">
                 <input type="search" placeholder="¿Qué deseas Buscar?">
@@ -24,17 +26,8 @@
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="#">inicio </a></li>
-                        <li><a href="productos.html">productos</a>
-                            <ul>
-                                <li><a href="#">frutos secos</a></li>
-                                <li><a href="#">harinas</a></li>
-                                <li><a href="#">cereales</a></li>
-                                <li><a href="#">frutas desecadas</a></li>
-                                <li><a href="#">reposteria</a></li>
-                                <li><a href="#">otros productos</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="index.html">inicio </a></li>
+                        <li><a href="productos.html">productos</a></li>                          
                         <li><a href="Nuestra-tienda.html">nuestra tienda </a></li>
                         <li><a href="Mis-categoria.html"> mis categorias</a></li>
                         <li><a href="Contacto.html"> contacto</a></li> 
@@ -45,6 +38,43 @@
 
         </div>
     </header>
+    <content>
+        <h4>CONTACTANOS</h4>
+        <p>Dejenos sus datos en el siguiente formulario y en breve nos comunicaremos!
+        ¡Muchas gracias!
+        </p>
+        <form>
+            <label for "nombreyapellido"> Nombre y Apellido
+                <input  type="text" name="nombre" value="" placeholder="Su nombre">
+                <input type="text" name="Apellido" value="" placeholder="Su Apellido">
+            </label>
+            <label for="telefono"> Telefono
+                <input type= "number" name="Telefono" value="" placeholder="Nro de telefono">
+            </label>
+            <label for="direccion"> Direccion
+                <input type="text" name="Calle" value="" placeholder="Calle">
+                <input type="number" name="Número" value="" placeholder="numero de casa"   >
+            </label>
+            <label for="comentario"> Comentarios y consultas
+                <textarea name="comentario" rows="5" cols="40">Escriba aquí su consulta, duda  o comentario</textarea>
+                <input type="submit"> 
+            </label> 
+            <label for="captcha " name="Robot"> Compruebe que no  es un Robot
+
+               <p> Escriba las letras que ve en la imagen</p>
+               <img  id='img_captcha' src="images/capthchasImages/captcha1.png" alt="capthchaImages">
+               <input name="textoCaptcha" id="txtcptch" type="text" value="" placeholder="Texto de la imagen">
+                         
+               <button id="btnCaptcha" type ="button">verificar</button>               
+            </label>
+
+
+
+        </form>
+
+
+
+    </content>
     
     <!--nose que mas se podria agregar o como seguiragregando-->
     <!--aca comienza el footer-->
@@ -103,5 +133,6 @@
         Este Sitio fue creado por <span>-X-</span> | Copyright © Derechos reservados por el autor.
       </h1>
   </footer>
+  <script src="/js/captcha.js"></script>
 </body>
 </html>
