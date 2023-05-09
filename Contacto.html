@@ -44,29 +44,38 @@
         ¡Muchas gracias!
         </p>
         <form>
-            <label for "nombreyapellido"> Nombre y Apellido
-                <input  type="text" name="nombre" value="" placeholder="Su nombre">
-                <input type="text" name="Apellido" value="" placeholder="Su Apellido">
-            </label>
-            <label for="telefono"> Telefono
-                <input type= "number" name="Telefono" value="" placeholder="Nro de telefono">
-            </label>
-            <label for="direccion"> Direccion
-                <input type="text" name="Calle" value="" placeholder="Calle">
-                <input type="number" name="Número" value="" placeholder="numero de casa"   >
-            </label>
-            <label for="comentario"> Comentarios y consultas
-                <textarea name="comentario" rows="5" cols="40">Escriba aquí su consulta, duda  o comentario</textarea>
-                <input type="submit"> 
-            </label> 
-            <label for="captcha " name="Robot"> Compruebe que no  es un Robot
+            <div class="nombre-apellido">
+                <label for="nombreyapellido"> Nombre y Apellido
+                    <input  type="text" name="nombre" value="" placeholder="Su nombre">
+                    <input type="text" name="Apellido" value="" placeholder="Su Apellido">
+                </label>
+            </div>
+            <div class="informacion-personal">
+                <label for="telefono"> Telefono
+                    <input type= "number" name="Telefono" value="" placeholder="Nro de telefono">
+                </label>
+                <label for="direccion"> Direccion
+                    <input type="text" name="Calle" value="" placeholder="Calle">
+                    <input type="number" name="Número" value="" placeholder="numero de casa">
+                </label>
+            </div>
+            <div class="comentarios">
+                <label for="comentario"> Comentarios y consultas
+                    <textarea name="comentario" rows="5" cols="40">Escriba aquí su consulta, duda  o comentario</textarea>
+                    <input type="submit"> 
+                </label> 
+            </div>
+            <div class="captcha">
+                <label for="captcha " name="Robot"> Compruebe que no  es un Robot
 
-               <p> Escriba las letras que ve en la imagen</p>
-               <img  id='img_captcha' src="images/capthchasImages/captcha1.png" alt="capthchaImages">
-               <input name="textoCaptcha" id="txtcptch" type="text" value="" placeholder="Texto de la imagen">
-                         
-               <button id="btnCaptcha" type ="button">verificar</button>               
-            </label>
+                    <p> Escriba las letras que ve en la imagen</p>
+                    <img  id='img_captcha' src="images/capthchasImages/captcha1.png" alt="capthchaImages">
+                    <input name="textoCaptcha" id="txtcptch" type="text" value="" placeholder="Texto de la imagen">
+                              
+                    <button id="btnCaptcha" type ="button">verificar</button>               
+                 </label>
+            </div>
+           
 
 
 
