@@ -13,7 +13,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #FFF;
+    background: rgb(222, 205, 190)
 }
 /*header superior*/
 .header-superior{
@@ -38,7 +38,7 @@
 .container-menu{
     width: 100%;
     height: 70px;
-    background: #00c3ff;
+    background: rgb(245, 118,21);
     padding: 0 20px;
 }
 
@@ -76,7 +76,7 @@ nav > ul > li > a{
 }
 nav > ul > li > a:hover{
     transform: scala(1.1);
-    background: #00c3ff;
+    background: rgb(245, 118,21);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 
@@ -113,26 +113,7 @@ nav > ul > li >ul:before{
     top: -12px;
     left: 20px;
 }
-/*color, dimension, tamaño a los botones a*/
-nav > ul > li > ul > li a{
-    display: block;
-    color: #00c3ff;
-    padding: 6px;
-    padding-left: 14px;
-    margin-top: 10px;
-    font-size: 14px;
-    text-transform: uppercase;
-    transition: all 300ms ease;
-}
-/*color y dimension a los botones a con hover*/
-nav > ul > li >ul >li >a:hover{
-    background: #00c3ff;
-    color: white;
-    transform: scale(1.1);
-    padding-left: 30px;
-    font-size: 14px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-}
+
 /*bajo el nav*/
 .promociones {
     background-image: url(images/frutos_secos.png);
@@ -180,7 +161,7 @@ body {
     color: #FFFFFF;
     margin-bottom: 25px;
     font-weight: 500;
-    border-bottom: 2px solid #00c3ff;
+    border-bottom: 2px solid rgb(245, 118,21);
     padding-bottom: 10px;
     display: inline-block;
 }
@@ -194,7 +175,7 @@ body {
     transition: all .3s ease;
 }
 .footer-links ul li a:hover{
-    color: #00c3ff;
+    color: rgb(245, 118,21);
     padding-left: 6px;
 }
 
@@ -212,7 +193,7 @@ body {
 }
 
 .social-link a:hover{
-    background-color: #00c3ff;
+    background-color: rgb(245, 118,21);
 }
 
 @media(max-width:991px){
