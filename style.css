@@ -295,3 +295,21 @@ body {
     color: #ff3300;
     font-size: 2rem;
   }
+/*lista de precios (tabla)*/
+.contenido .lista-de-precios{ 
+    background-color: rgba(86, 127,33,0.2);
+    table-layout: fixed;
+    width: 80%;
+    border-collapse: collapse;
+    border: 3px solid green;
+    text-align: center;
+    font-size:x-large;
+}
+.contenido{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+ tr, th, td{
+    border: green 2px solid;
+ } 
