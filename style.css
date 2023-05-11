@@ -239,6 +239,18 @@ body {
     text-align: center;
 }
 /*seccion productos*/
+.gallery{
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+  
+.gallery .box{
+    display: block;
+    width: 25%;
+}
 .gallery .image-container {
     display: flex;
     align-items: center;
@@ -252,7 +264,6 @@ body {
     justify-content: center;
     margin: 2rem;
     border: 0.1rem solid rgba(0, 0, 0, 0.3);
-    flex: 1 1 30rem;
   }
   
   .gallery .image-container .box .image {
