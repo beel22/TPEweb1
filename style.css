@@ -243,7 +243,7 @@ footer {
 
   /*seccion contacto*/
   .content{
-    background: url(images/frutos_secos.png)no-repeat center center fixed;
+    background: url(images/productos/frutos_secos.png)no-repeat center center fixed;
     background: linear-gradient( rgba(5, 7, 12, 0.75));
     min-height: 100vh;
     background-size: cover;
