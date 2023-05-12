@@ -13,35 +13,39 @@
 
 <body>
     <!--aca arranca el header-->
-    <header>
-        <div class="header-superior">
-            <div class="logo">
-                <img src="images/logo.png" alt="imagen del logo">
-            </div>
-            <div class="search">
-                <input type="search" placeholder="¿Qué deseas Buscar?">
-                <button class="boton"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
-            </div>
+    <header class="header-superior">
+                  
+        <div class="search">
+            <input type="search" placeholder="¿Qué deseas Buscar?">
+            <!-- <button class="boton"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button> -->
         </div>
-    </header>
+    
+</header>
 
     <div class="container-menu">
         <div class="menu">
             <nav>
                 <ul>
-                    <li><a href="#">inicio </a></li>
-                    <li><a href="productos.html">productos</a></li>
+                    <li><img id="logoSup" src="images/logo.png" alt="imagen del logo"></li>
+                    <li><a href="index.html">inicio </a></li>
+                    <li><a href="productos.html">productos</a></li>                          
                     <li><a href="Nuestra-tienda.html">nuestra tienda </a></li>
                     <li><a href="Lista-de-precios.html"> lista de precios</a></li>
                     <li><a href="Contacto.html"> contacto</a></li> 
                 </ul>
             </nav>
+
         </div>
+
     </div>
 
-    <div class="promociones">
-        <h1>¡super descuentos!<h1>
-        <h2>25% de descuento!</h2>
+    <div class="carrusel-promociones">
+        <div class="carrusel-fotos">
+            <div class="carruselImg"><img src="images/carrusel1.png" alt="Promocion 1" class="slider-item"/></div>
+            <div class="carruselImg"><img src="images/carrusel2.png" alt="Promocion 2" class="slider-item"/></div>
+            <div class="carruselImg"><img src="images/carrusel3.png" alt="Promocion 3" class="slider-item"/></div>
+            <div class="carruselImg"><img src="images/carrusel4.png" alt="Promocion 4" class="slider-item"/></div>
+    </div>
      </div>
          
     <!--nose que mas se podria agregar o como seguiragregando-->
@@ -98,12 +102,13 @@
   
       </div>
       <h1 class="rights">
-        Este Sitio fue creado por <span>-X-</span> | Copyright © Derechos reservados por el autor.
+        Este Sitio fue creado por <span>-Bee-Feed-</span> | Copyright © Derechos reservados por el autor.
       </h1>
   </footer>
 
   <script src="https://kit.fontawesome.com/bc77e1aff3.js" crossorigin="anonymous" defer></script>
     <script src="js.js"></script>
+    <script src="carrusel.js"></script>
 </body>
 
 </html>

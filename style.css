@@ -19,19 +19,26 @@
 .header-superior{
     max-width: 1200px;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display:block;
+    align-items:self-end;
+    justify-content:inherit;
     padding: 20px;
 }
 
-.logo img{
-    width: 80px;
+#logoSup{
+
+    width: 140px;
+    margin-top: -40px;
 }
+
 
 .search input{
     width: 300px;
     padding: 10px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    margin-bottom: 250px 250px 200px 205px;
 }
 /*barra menu*/
 
@@ -40,6 +47,7 @@
     height: 70px;
     background: rgb(245, 118,21);
     padding: 0 20px;
+    margin: 50px 0 50px ;
 }
 
 .menu{
@@ -115,12 +123,23 @@ nav > ul > li >ul:before{
 }
 
 /*bajo el nav*/
-.promociones {
-    background-image: url(images/frutos_secos.png);
-    width: 100%;
-    height: 250px;
-    padding: 15px;
-}
+.carrusel-fotos {    
+        display: flex; 
+        overflow-x:scroll;      
+        }      
+
+
+      .carruselImg {
+        min-width: 1920px;
+        max-height: 350px;
+      }
+      *.carruselImg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+   
+   
 .promociones h1{
     color: #fff59d;
 }
@@ -137,14 +156,19 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
+    background-color: black;
 }
+ .box-producto{
+    width: 250px;
+    height: 250px;
+    
+} */
 
-.footer{
+footer {
     background-color: #24262B;
     padding: 80px 0;
-
 }
 
 .footer-row{
@@ -216,13 +240,43 @@ body {
     color: #FFF;
     font-size: 15px;
     padding-bottom: 5rem;
+    background-color: black;
+    width: 100%;
   }
   
   .footer .rights span {
-    color: var(--blue);
+    color: blue;
   }
 
-  /*seccion contato*/
+  /*seccion contacto*/
+  #form-contact{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    
+  }
+  label img{
+    height: 50px;
+  }
+  #contenedor-contacto{
+    display: flex;
+    margin: 25px;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #contenedor-contacto p {
+    width: 25%;
+  }
+  #captcha{
+    width: 25%;
+  }
+  #contenedor-contacto input{
+    width: 400px;
+  }
+  
+
+/* 
   .nombre-apellido{
     display:flow-root;
     width: 40%;
@@ -237,19 +291,22 @@ body {
     display: flex-root;
     width: 40%;
     padding-top: 40px;
-    text-align: center;
-}
+    text-align: center; 
+}*/
 /*seccion productos*/
 .productos{
     display: flex;
-    justify-content:space-between;
-    width: 100%;
+    flex-direction: row;
+    justify-content:space-around;   
+    flex-wrap: wrap;
+    align-items: stretch;
 }
+
 .productos .image-container{
     display: flex;
     justify-content: space-evenly;
     padding: 15px;
-    width: 100%;
+    
 }
 /*lista de precios (tabla)*/
 .contenido .lista-de-precios{ 
