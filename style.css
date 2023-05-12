@@ -221,7 +221,7 @@ body {
     color: var(--blue);
   }
 
-  /*seccion contacto*/
+  /*seccion contato*/
   .nombre-apellido{
     display:flow-root;
     width: 40%;
@@ -241,7 +241,14 @@ body {
 /*seccion productos*/
 .productos{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    width: 100%;
+}
+.productos .image-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    width: 100%;
 }
 /*lista de precios (tabla)*/
 .contenido .lista-de-precios{ 
