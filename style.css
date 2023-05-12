@@ -239,73 +239,10 @@ body {
     text-align: center;
 }
 /*seccion productos*/
-.gallery{
-    min-height: 100vh;
+.productos{
     display: flex;
-    flex-direction:column;
-    justify-content: space-around;
-    align-content: space-around;
-}
-  
-.gallery .box{
-    display: block;
-    width: 25%;
-}
-.gallery .image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .gallery .image-container .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem;
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
-  }
-  
-  .gallery .image-container .box .image {
-    height: 12rem;
-    width: 20rem;
-    text-align: center;
-    padding: 1rem;
-    background: #f0f0f0;
-  }
-  
-  .gallery .image-container .box .image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  .gallery .image-container .box:hover .image {
-    background: #fff59d;
-  }
-  
-  .gallery .image-container .box .info {
-    width: 100%;
-  }
-  
-  .gallery .image-container .box .info h3 {
-    font-size: 2rem;
-    color: var(--blue);
-    padding: 1rem;
-  }
-  
-  .gallery .image-container .box .info .subInfo {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
-    padding: 1rem;
-  }
-  
-  .gallery .image-container .box .info .subInfo .price {
-    color: #ff3300;
-    font-size: 2rem;
-  }
+}
 /*lista de precios (tabla)*/
 .contenido .lista-de-precios{ 
     background-color: rgba(86, 127,33,0.2);
