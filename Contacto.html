@@ -11,21 +11,20 @@
 </head>
 <body>
     <!--aca arranca el header-->
-    <header>
-        <div class="header-superior">
-            <div class="logo">
-                <img src="images/logo.png" alt="imagen del logo">
-            </div>
+    <header class="header-superior">
+                  
             <div class="search">
                 <input type="search" placeholder="¿Qué deseas Buscar?">
                 <button class="boton"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
             </div>
-        </div>
+        
+    </header>
 
         <div class="container-menu">
             <div class="menu">
                 <nav>
                     <ul>
+                        <li><img id="logoSup" src="images/logo.png" alt="imagen del logo"></li>
                         <li><a href="index.html">inicio </a></li>
                         <li><a href="productos.html">productos</a></li>                          
                         <li><a href="Nuestra-tienda.html">nuestra tienda </a></li>
@@ -37,50 +36,55 @@
             </div>
 
         </div>
-    </header>
-    <content>
-        <h4>CONTACTANOS</h4>
+   
+    <div id="contenedor-contacto">
+        
         <p>Dejenos sus datos en el siguiente formulario y en breve nos comunicaremos!
         ¡Muchas gracias!
         </p>
-        <form>
-            <div class="nombre-apellido">
-                <label for="nombreyapellido"> Nombre y Apellido
-                    <input  type="text" name="nombre" value="" placeholder="Su nombre">
-                    <input type="text" name="Apellido" value="" placeholder="Su Apellido">
-                </label>
-            </div>
-            <div class="informacion-personal">
-                <label for="telefono"> Telefono
-                    <input type= "number" name="Telefono" value="" placeholder="Nro de telefono">
-                </label>
-                <label for="direccion"> Direccion
-                    <input type="text" name="Calle" value="" placeholder="Calle">
-                    <input type="number" name="Número" value="" placeholder="numero de casa">
-                </label>
-            </div>
-            <div class="comentarios">
-                <label for="comentario"> Comentarios y consultas
-                    <textarea name="comentario" rows="5" cols="40">Escriba aquí su consulta, duda  o comentario</textarea>
-                    <input type="submit"> 
-                </label> 
-            </div>
-            <div class="captcha">
-                <label for="captcha " name="Robot"> Compruebe que no  es un Robot
+        <form id="formContact">
+            <label for ="nombre">
+                <h5> Nombre</h5>
+                <input  type="text" name="nombre" value="" placeholder="Su nombre">
+                
+            </label>
 
-                    <p> Escriba las letras que ve en la imagen</p>
-                    <img  id='img_captcha' src="images/capthchasImages/captcha1.png" alt="capthchaImages">
-                    <input name="textoCaptcha" id="txtcptch" type="text" value="" placeholder="Texto de la imagen">
-                              
-                    <button id="btnCaptcha" type ="button">verificar</button>               
-                 </label>
-            </div>
-        
+            <label for="telefono">
+                <h5> Teléfono</h5>
+                <input type= "tel" name="telefono" value="" placeholder="Nro de telefono" required>
+            </label>
+
+            <label for="direccion">
+                <h5> Dirección</h5>
+                <input type="text" name="direccion" value="" placeholder="Dirección" required>
+                
+            </label>
+            <label for="E-mail"> 
+                <h5>E-mail</h5>
+                <input type="email" name="email" value="" placeholder="E-mail" required>
+                
+
+            </label>
+
+            <label for="comentario">
+                <h5>Comentarios y consultas</h5>
+                <textarea name="comentario" rows="5" cols="40" placeholder="Escriba aquì su comentario o consulta" required></textarea>
+            </label>         
+            <button id= "enviarForm" type="submit"> enviar</button>
+            
+            
         </form>
-        
-    </content>
-    
-    <!--nose que mas se podria agregar o como seguiragregando-->
+        <label id=captcha for="captcha " name="Robot">
+           <h4> Escriba las letras que ve en la imagen</h>
+           <img  id='img_captcha' src="images/capthchasImages/captcha1.png" alt="capthchaImages">
+           <input name="textoCaptcha" id="txtcptch" type="text" value="" placeholder="Texto de la imagen">                         
+           <button id="btnCaptcha" type ="button">verificar</button>               
+        </label>
+
+
+
+    </div>
+   
     <!--aca comienza el footer-->
     
     <footer class="footer">
@@ -134,7 +138,7 @@
   
       </div>
       <h1 class="rights">
-        Este Sitio fue creado por <span>-X-</span> | Copyright © Derechos reservados por el autor.
+        Este Sitio fue creado por <span>Bee-Feed</span> | Copyright © Derechos reservados por el autor.
       </h1>
   </footer>
   <script src="/js/captcha.js"></script>
