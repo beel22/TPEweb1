@@ -312,15 +312,25 @@ body {
     table-layout: fixed;
     width: 80%;
     border-collapse: collapse;
-    border: 3px solid green;
+    border: 3px solid #fff59d;
     text-align: center;
     font-size:x-large;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); /*sombra de la tabla*/
 }
 .contenido{
     padding: 20px;
     display: flex;
     justify-content: center;
 }
- tr, th, td{
-    border: green 2px solid;
- } 
+.contenido thead tr{
+    background-color: rgb(8, 73, 8);
+    color:rgb(248, 130, 20);
+    text-align: center;
+}
+.contenido tbody tr{
+    border-bottom: 1px solid rgb(248, 130, 20);
+    text-align: center;
+}
+.contenido tbody tr:nth-of-type(even){
+    background-color: rgb(248, 130, 20)
+}
