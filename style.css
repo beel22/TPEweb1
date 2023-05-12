@@ -123,21 +123,19 @@ nav > ul > li >ul:before{
 }
 
 /*bajo el nav*/
-.carrusel-fotos {    
-        display: flex; 
-        overflow-x:scroll;      
-        }      
-
-
-      .carruselImg {
-        min-width: 1920px;
-        max-height: 350px;
-      }
-      *.carruselImg img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+.carrusel-fotos {
+    display: flex; 
+    overflow-x:scroll;            
+}   
+ .carruselImg {
+   min-width: 1920px;
+   max-height: 350px;
+  }
+ .carruselImg img{
+    width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
    
    
 .promociones h1{
@@ -154,18 +152,12 @@ body {
     text-transform: capitalize;
     background-color: #fff59d;
 }
-
+/*footer*/
 .container {
     /* max-width: 1200px; */
     margin: 0 auto;
-    background-color: black;
+    max-width: 1200px;
 }
- .box-producto{
-    width: 250px;
-    height: 250px;
-    
-} */
-
 footer {
     background-color: #24262B;
     padding: 80px 0;
@@ -240,7 +232,7 @@ footer {
     color: #FFF;
     font-size: 15px;
     padding-bottom: 5rem;
-    background-color: black;
+    background-color: #24262B;
     width: 100%;
   }
   
@@ -248,16 +240,26 @@ footer {
     color: blue;
   }
 
+
   /*seccion contacto*/
+  .content{
+    background: url(images/frutos_secos.png)no-repeat center center fixed;
+    background: linear-gradient( rgba(5, 7, 12, 0.75));
+    min-height: 100vh;
+    background-size: cover;
+
+  }
   #form-contact{
+    margin-top: 25px;
     display: flex;
     align-content: center;
     flex-direction: column;
-    
   }
+
   label img{
     height: 50px;
   }
+
   #contenedor-contacto{
     display: flex;
     margin: 25px;
@@ -265,18 +267,19 @@ footer {
     flex-direction: row;
     justify-content: space-around;
   }
+
   #contenedor-contacto p {
     width: 25%;
   }
+
   #captcha{
     width: 25%;
   }
+
   #contenedor-contacto input{
     width: 400px;
   }
-  
 
-/* 
   .nombre-apellido{
     display:flow-root;
     width: 40%;
@@ -292,7 +295,8 @@ footer {
     width: 40%;
     padding-top: 40px;
     text-align: center; 
-}*/
+}
+
 /*seccion productos*/
 .productos{
     display: flex;
@@ -305,9 +309,13 @@ footer {
 .productos .image-container{
     display: flex;
     justify-content: space-evenly;
-    padding: 15px;
-    
+    padding: 15px; 
 }
+.box-producto{
+    width: 250px;
+    height: 250px;
+  }
+
 /*lista de precios (tabla)*/
 .contenido .lista-de-precios{ 
     background-color: rgba(86, 127,33,0.2);
