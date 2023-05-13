@@ -150,7 +150,7 @@ nav > ul > li >ul:before{
 body {
     font-family: sans-serif;
     text-transform: capitalize;
-    background-color: #fff59d;
+    background-color: rgb(87, 158, 87);
 }
 /*footer*/
 .container {
@@ -242,59 +242,40 @@ footer {
 
 
   /*seccion contacto*/
-  .content{
-    background: url(images/productos/frutos_secos.png)no-repeat center center fixed;
+
+  .section-content{
+    background-image: url(images/productos/frutos_secos.png);
     background: linear-gradient( rgba(5, 7, 12, 0.75));
-    min-height: 100vh;
-    background-size: cover;
-
-  }
-  #form-contact{
-    margin-top: 25px;
     display: flex;
-    align-content: center;
-    flex-direction: column;
-  }
-
-  label img{
-    height: 50px;
-  }
-
-  #contenedor-contacto{
-    display: flex;
-    margin: 25px;
-    align-content: center;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  #contenedor-contacto p {
-    width: 25%;
-  }
-
-  #captcha{
-    width: 25%;
-  }
-
-  #contenedor-contacto input{
-    width: 400px;
-  }
-
-  .nombre-apellido{
-    display:flow-root;
-    width: 40%;
-    padding: 40px;
-    text-align: center;
-  }
-.nombre-apellido a{
-    margin: 0 10px 10px 0;
-    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
 }
-.informacion-personal{
-    display: flex-root;
-    width: 40%;
-    padding-top: 40px;
-    text-align: center; 
+.contenedor{
+    background-color:rgba(233, 108, 6, 0.884);
+    max-width: 700px;
+    width: 100%;
+    padding: 23px 30px;
+    border-radius: 5px;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto label h5{
+    display: flex;
+    align-items:center;
+    font: 1em sans-serif;
 }
 
 /*seccion productos*/
@@ -305,7 +286,6 @@ footer {
     flex-wrap: wrap;
     align-items: stretch;
 }
-
 .productos .image-container{
     display: flex;
     justify-content: space-evenly;
